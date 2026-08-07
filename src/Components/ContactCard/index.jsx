@@ -5,34 +5,36 @@ export default function ContactCard({
   icon,
   title,
   subtitle,
-  href,
+  href,external=false,
 }) {
   return (
     <motion.a
-      href={href}
-      whileHover={{
-        y: -5,
-        scale: 1.02,
-      }}
-      transition={{
-        duration: 0.25,
-      }}
-      className="
-      group
-      flex
-      items-center
-      justify-between
-      rounded-2xl
-      border
-      border-white/10
-      bg-white/5
-      p-5
-      transition-all
-      duration-300
-      hover:border-blue-500/40
-      hover:bg-white/10
-      "
-    >
+  href={href}
+  target={external ? "_blank" : undefined}
+  rel={external ? "noopener noreferrer" : undefined}
+  whileHover={{
+    y: -5,
+    scale: 1.02,
+  }}
+  transition={{
+    duration: 0.25,
+  }}
+  className="
+    group
+    flex
+    items-center
+    justify-between
+    rounded-2xl
+    border
+    border-white/10
+    bg-white/5
+    p-5
+    transition-all
+    duration-300
+    hover:border-blue-500/40
+    hover:bg-white/10
+  "
+>
       <div className="flex items-center gap-4">
         <div
           className="

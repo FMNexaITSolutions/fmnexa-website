@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import {FaWhatsapp,FaEnvelope, FaPhoneAlt, FaInstagram,  FaLinkedin,  FaGithub,} from "react-icons/fa";
+import {FaWhatsapp,FaEnvelope, FaCalendarAlt, FaInstagram,  FaLinkedin,  FaGithub,} from "react-icons/fa";
 import ContactCard from "../ContactCard";
 
 
@@ -44,6 +44,7 @@ export default function ContactInfo() {
     title="Chat on WhatsApp"
     subtitle="Typically replies in a few minutes"
     href="https://wa.me/14376675501"
+    external
 />
 
 <ContactCard
@@ -51,13 +52,15 @@ export default function ContactInfo() {
     title="Send an Email"
     subtitle="fmnexasolutions@gmail.com"
     href="mailto:fmnexasolutions@gmail.com"
+    external
 />
 
 <ContactCard
-    icon={<FaPhoneAlt />}
-    title="Call Us"
-    subtitle="+14376675501 "
-    href="tel:+14376675501"
+  icon={<FaCalendarAlt />}
+  title="Book a Call"
+  subtitle="Schedule a free consultation"
+  href="https://calendly.com/fmnexasolutions/30min"
+  external
 />
       </div>
     </motion.div>

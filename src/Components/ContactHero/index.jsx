@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function ContactHero() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6">
+     <section className="pt-17 pb-20 px-6">
 
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600/10 blur-[160px]" />
@@ -25,14 +25,12 @@ export default function ContactHero() {
             delay: .2,
             duration: .8,
           }}
-          className="text-5xl font-bold leading-tight md:text-7xl"
+          className="text-5xl font-bold leading-tight md:text-5xl"
           style={{ fontFamily: "Space Grotesk" }}
         >
           Let's Build Your
           <br />
-          Next Digital
-          <br />
-          Experience.
+          Next Digital Experience.
         </motion.h1>
 
         <motion.p

@@ -42,13 +42,12 @@ export default function Navbar() {
       <div
         className={`
         mx-auto
-        flex
+        flex h-24
         max-w-7xl
         items-center
         justify-between
         rounded-2xl
-        px-8
-        py-4
+        px-8   lg:px-8 
         transition-all
         duration-500
 
