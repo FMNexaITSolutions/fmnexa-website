@@ -7,6 +7,7 @@ import WebDevelopment from "./Pages/Services/WebsiteDevelopment"
 import ShopifyDevelopment from "./Pages/Services/ShopifyDevelopment"
 import EcommerceDevelopment from "./Pages/Services/EcommerceDevelopment";
 import MobileAppDevelopment from "./Pages/Services/MobileAppDevelopment";
+import About from "./Pages/About";
 
 export default function AppRouter() {
   return (
@@ -16,6 +17,7 @@ export default function AppRouter() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
+           <Route path="/about" element={<About />} />
           <Route path="/services/website-development" element={<WebDevelopment />}/>      
            <Route path="/services/shopify-development" element={<ShopifyDevelopment />}/> 
            <Route path="/services/ecommerce-development" element={<EcommerceDevelopment />}/> 
