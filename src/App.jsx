@@ -8,6 +8,7 @@ import ShopifyDevelopment from "./Pages/Services/ShopifyDevelopment"
 import EcommerceDevelopment from "./Pages/Services/EcommerceDevelopment";
 import MobileAppDevelopment from "./Pages/Services/MobileAppDevelopment";
 import About from "./Pages/About";
+import Work from "./Pages/Work";
 
 export default function AppRouter() {
   return (
@@ -18,6 +19,7 @@ export default function AppRouter() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
            <Route path="/about" element={<About />} />
+           <Route path="/portfolio" element={<Work />} />
           <Route path="/services/website-development" element={<WebDevelopment />}/>      
            <Route path="/services/shopify-development" element={<ShopifyDevelopment />}/> 
            <Route path="/services/ecommerce-development" element={<EcommerceDevelopment />}/> 
