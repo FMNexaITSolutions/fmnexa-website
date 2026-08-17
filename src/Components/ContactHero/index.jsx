@@ -25,9 +25,7 @@ export default function ContactHero() {
             delay: .2,
             duration: .8,
           }}
-          className="text-5xl font-bold leading-tight md:text-5xl"
-          style={{ fontFamily: "Space Grotesk" }}
-        >
+          className="text-5xl font-bold leading-tight md:text-4xl">
           Let's Build Your
           <br />
           Next Digital Experience.

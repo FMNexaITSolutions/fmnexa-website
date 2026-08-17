@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import Navbar from "../../Components/Navbar";
 import runnerSpikes from "../../assets/runnerspikes.png";
-import oodleswok from "../../assets/oodles.png";
 
 export default function Work() {
   return (
