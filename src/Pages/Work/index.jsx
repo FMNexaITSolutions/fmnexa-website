@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import Navbar from "../../Components/Navbar";
 import runnerSpikes from "../../assets/runnerspikes.png";
+import oodleswok from "../../assets/oodles.png";
 
 export default function Work() {
   return (
@@ -172,7 +173,7 @@ export default function Work() {
         text-4xl
         font-bold
         text-white
-        md:text-5xl
+        md:text-3xl
       "
     >
       Runner Spikes
@@ -259,6 +260,8 @@ export default function Work() {
 </motion.div>
 
         </div>
+
+           
 
       </section>
 
