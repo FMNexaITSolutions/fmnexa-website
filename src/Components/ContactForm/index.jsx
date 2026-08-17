@@ -54,7 +54,7 @@ const validateEmail = (email = "") => {
 
   try {
     const response = await fetch(
-      "http://localhost:8030/api/contact",
+      "https://fmnexa-website.onrender.com/api/contact",
       {
         method: "POST",
         headers: {
