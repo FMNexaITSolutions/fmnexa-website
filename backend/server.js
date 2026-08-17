@@ -23,7 +23,11 @@ app.use(express.json());
 // Routes
 
 app.use("/api/contact", contactRoutes);
-
+app.get("/", (req, res) => {
+  res.status(200).json({
+    message: "FM Nexa Backend API is running",
+  });
+});
 
 // MongoDB
 
