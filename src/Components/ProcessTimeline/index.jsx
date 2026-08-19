@@ -41,7 +41,7 @@ export default function ProcessTimeline() {
       {/* Step 1 */}
 
       <div className="grid lg:grid-cols-2 items-center">
-        <ProcessCard {...steps[0]} align="left" />
+        <ProcessCard {...steps[0]} align="left" /><br/>
         <div />
       </div>
 
@@ -51,7 +51,7 @@ export default function ProcessTimeline() {
 
       <div className="grid lg:grid-cols-2 items-center">
         <div />
-        <ProcessCard {...steps[1]} align="right" />
+        <ProcessCard {...steps[1]} align="right" /><br/>
       </div>
 
       <Connector direction="left" />
@@ -59,7 +59,7 @@ export default function ProcessTimeline() {
       {/* Step 3 */}
 
       <div className="grid lg:grid-cols-2 items-center">
-        <ProcessCard {...steps[2]} align="left" />
+        <ProcessCard {...steps[2]} align="left" /><br/>
         <div />
       </div>
 
@@ -75,3 +75,4 @@ export default function ProcessTimeline() {
     </div>
   );
 }
+

@@ -20,7 +20,7 @@ export default function Contact() {
               <ContactForm />
 
               <ContactInfo />
-
+             <br/>
             </div>
 
           </div>

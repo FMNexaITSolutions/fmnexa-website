@@ -26,11 +26,11 @@ export default function Footer() {
           </h3>
 
           <ul className="space-y-3 text-center sm:text-left text-gray-400">
-            <li><Link to="/" className="transition-colors duration-300 hover:text-white">Home</Link></li>
-            <li><Link to="/about" className="transition-colors duration-300 hover:text-white">About</Link></li>
-            <li><Link to="/services" className="transition-colors duration-300 hover:text-white">Services</Link></li>
-            <li><Link to="/portfolio" className="transition-colors duration-300 hover:text-white">Portfolio</Link></li>
-            <li><Link to="/contact" className="transition-colors duration-300 hover:text-white">Contact</Link></li>
+            <li><Link to="/" onClick={() => window.scrollTo(0, 0)} className="transition-colors duration-300 hover:text-white">Home</Link></li>
+            <li><Link to="/about" onClick={() => window.scrollTo(0, 0)} className="transition-colors duration-300 hover:text-white">About</Link></li>
+            <li><Link to="/services" onClick={() => window.scrollTo(0, 0)} className="transition-colors duration-300 hover:text-white">Services</Link></li>
+            <li><Link to="/portfolio" onClick={() => window.scrollTo(0, 0)} className="transition-colors duration-300 hover:text-white">Portfolio</Link></li>
+            <li><Link to="/contact" onClick={() => window.scrollTo(0, 0)} className="transition-colors duration-300 hover:text-white">Contact</Link></li>
           </ul>
         </div>
 

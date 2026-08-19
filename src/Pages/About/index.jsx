@@ -7,7 +7,7 @@ import Navbar from "../../Components/Navbar";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-[#030712] text-white">
+    <div className="w-full max-w-[100vw] overflow-x-hidden bg-[#030712]">
 
       <Navbar />
 
