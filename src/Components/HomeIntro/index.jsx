@@ -212,19 +212,21 @@ export default function HomeIntro() {
 
   {/* Hero Image */}
 
-  <motion.img
-    src={techHero}
-    alt="Digital technology solutions"
-    className="
-      relative
-      z-10
-      w-full
-      max-w-[700px]
-      scale-130 -translate-x-12
-      object-contain
-      drop-shadow-[0_0_45px_rgba(37,99,235,.18)]
-    "
-  />
+<motion.img
+  src={techHero}
+  alt="Digital technology solutions"
+  className="
+    relative
+    z-10
+    mx-auto
+    block
+    w-full
+    max-w-[700px]
+    object-contain
+    drop-shadow-[0_0_45px_rgba(37,99,235,.18)]
+    lg:-translate-x-12
+  "
+/>
 </motion.div>
 
         </div>
@@ -234,3 +236,4 @@ export default function HomeIntro() {
     </section>
   );
 }
+

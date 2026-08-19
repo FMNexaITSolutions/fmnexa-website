@@ -188,17 +188,20 @@ export default function WhyNexa() {
 
               {/* Number */}
 
-              <span
+                          <span
                 className="
+                  pointer-events-none
                   absolute
-                  right-6
-                  top-5
+                  right-4
+                  top-3
+                  z-0
                   text-5xl
                   font-bold
-                  text-white/[0.04]
+                  leading-none
+                  text-white/[0.035]
                   transition-all
                   duration-500
-                  group-hover:text-blue-500/[0.08]
+                  group-hover:text-blue-500/[0.07]
                 "
               >
                 {benefit.number}
@@ -207,55 +210,58 @@ export default function WhyNexa() {
 
               {/* Icon + Title */}
 
-              <div className="flex items-center gap-4">
+              <div className="relative z-10 flex min-w-0 items-center gap-4">
+  
+  <div
+    className="
+      flex
+      h-11
+      w-11
+      shrink-0
+      items-center
+      justify-center
+      rounded-xl
+      bg-blue-500/10
+      text-xl
+      text-blue-400
+      transition-all
+      duration-500
+      group-hover:scale-105
+      group-hover:bg-blue-500/15
+    "
+  >
+    {benefit.icon}
+  </div>
 
-                <div
-                  className="
-                    flex
-                    h-11
-                    w-11
-                    shrink-0
-                    items-center
-                    justify-center
-                    rounded-xl
-                    bg-blue-500/10
-                    text-xl
-                    text-blue-400
-                    transition-all
-                    duration-500
-                    group-hover:scale-105
-                    group-hover:bg-blue-500/15
-                  "
-                >
-                  {benefit.icon}
-                </div>
+  <h3
+    className="
+      min-w-0
+      text-lg
+      font-semibold
+      leading-7
+      text-white
+      sm:text-xl
+    "
+  >
+    {benefit.title}
+  </h3>
 
-                <h3
-                  className="
-                    text-xl
-                    font-semibold
-                    text-white
-                  "
-                >
-                  {benefit.title}
-                </h3>
+</div>
 
-              </div>
-
-
-              {/* Description */}
-
-              <p
-                className="
-                  mt-5
-                  max-w-lg
-                  text-sm
-                  leading-7
-                  text-gray-400
-                "
-              >
-                {benefit.description}
-              </p>
+{/* Description */}
+<p
+  className="
+    relative
+    z-10
+    mt-5
+    max-w-lg
+    text-sm
+    leading-7
+    text-gray-400
+  "
+>
+  {benefit.description}
+</p>
 
             </motion.div>
           ))}
