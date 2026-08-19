@@ -5,18 +5,28 @@ import Navbar from "../../Components/Navbar";
 
 export default function Contact() {
   return (
-    <><Navbar/>
-    <main className="min-h-screen bg-[#030712] text-white">
-      <ContactHero />
-          <section className="px-6 pb-28">
-      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.4fr_0.8fr]">
+    <div className="relative w-full overflow-x-hidden bg-[#030712]">
+      <Navbar />
 
-        <ContactForm />
+      <main className="relative w-full overflow-x-hidden text-white">
+        
+        <ContactHero />
 
-        <ContactInfo />
+        <section className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto w-full max-w-7xl">
 
-      </div>
-    </section>
-    </main></>
+            <div className="grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
+              
+              <ContactForm />
+
+              <ContactInfo />
+
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+    </div>
   );
 }
