@@ -98,7 +98,7 @@ export default function Intro({ onComplete }) {
                 duration: 1.0,
               }}
             >
-             &nbsp; Building Digital Experiences
+             Building Digital Experiences
             </motion.p>
 
             {/* Animated Line */}
